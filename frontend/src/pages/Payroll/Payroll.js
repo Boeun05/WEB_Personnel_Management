@@ -15,20 +15,25 @@ const Container = styled.div`
 `;
 
 const StyledForm = styled.form`
-  display: flex;
-  margin-bottom: 3em;
   input {
-    margin-right: 2em;
-  }
-  .textInput {
-    flex: 5;
+    width: 600px;
+    padding: 0 10px;
+    margin-bottom: 70px;
+    height: 42px;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
   }
   button {
-    flex: 1;
+    padding: 0.7em;
+    width: 120px;
+    border-radius: 5px;
+    font-size: 14px;
     cursor: pointer;
-    background-color: #a9a9a9;
-    color: white;
-    border-radius: 3px;
+    background: #2d93f0;
+    color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-left: 8px;
   }
 `;
 

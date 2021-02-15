@@ -23,24 +23,35 @@ const Container = styled.div`
 `;
 
 const StyledForm = styled.form`
-  display: flex;
-  margin-bottom: 3em;
+  button {
+    padding: 0.7em;
+    width: 120px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
   input {
-    margin-right: 2em;
+    height: 42px;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin-left: 8px;
   }
   .dateInput {
-    flex: 1;
-    margin-left: 2em;
+    width: 120px;
   }
+
   .textInput {
-    flex: 3;
+    width: 600px;
+    padding: 0 10px;
+    margin-bottom: 70px;
   }
-  button {
-    flex: 1;
-    cursor: pointer;
-    background-color: #a9a9a9;
-    color: white;
-    border-radius: 3px;
+  .searchButton {
+    background: #2d93f0;
+    color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-left: 8px;
   }
 `;
 
@@ -95,7 +106,7 @@ function Attendance({
       </div>
       <StyledForm onSubmit={handleSearch}>
         <button type="button" onClick={handleAllDates}>
-          모든 날짜
+          모든날짜
         </button>
         <input
           type="date"
@@ -111,7 +122,9 @@ function Attendance({
           value={word}
           onChange={handleInputChange}
         />
-        <button type="submit">검색</button>
+        <button type="submit" className="searchButton">
+          검색하기
+        </button>
       </StyledForm>
       <Table page="attendance" headerArr={HEADER_ARR} dataArr={attendanceArr} />
       {showPagination && (

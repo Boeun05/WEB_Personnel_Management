@@ -5,28 +5,58 @@ import styled from 'styled-components';
 import AddEmployeeModal from './AddEmployeeModal';
 import EditEmployeeModal from './EditEmployeeModal';
 import Pagination from '@material-ui/lab/Pagination';
+import { FaPlus } from 'react-icons/fa';
 
 const StyledForm = styled.form`
-  display: flex;
-  margin-bottom: 3em;
   input {
-    margin-left: 2em;
-    margin-right: 2em;
+    height: 42px;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin-left: 8px;
   }
-  .typeInput {
-    flex: 1;
-    margin-left: 2em;
+  select {
+    outline: none;
+    width: 100px;
+    height: 42px;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+    padding: 0 10px;
   }
+
   .textInput {
-    flex: 4;
+    width: 600px;
+    padding: 0 10px;
   }
+
   button {
-    flex: 1;
+    padding: 0.7em;
+    width: 120px;
+    border-radius: 5px;
+    font-size: 14px;
     cursor: pointer;
-    background-color: #a9a9a9;
-    color: white;
-    border-radius: 3px;
+    background: #2d93f0;
+    color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-left: 8px;
   }
+`;
+
+const AddButtonWrap = styled.div`
+  width: 100%;
+  height: 40px;
+  margin: 15px 0;
+`;
+
+const AddButton = styled.button`
+  border-radius: 50%;
+  color: #fff;
+  font-size: 19px;
+  background: #2d93f0;
+  height: 40px;
+  width: 40px;
+  float: right;
+  cursor: pointer;
 `;
 
 const PaginationContainer = styled.div`
@@ -62,9 +92,6 @@ function PersonnelInformation({
   return (
     <div>
       <StyledForm onSubmit={handleSearch}>
-        <button type="button" onClick={handleAdd}>
-          직원 추가
-        </button>
         <select
           name="type"
           value={type}
@@ -83,6 +110,11 @@ function PersonnelInformation({
         />
         <button type="submit">검색</button>
       </StyledForm>
+      <AddButtonWrap>
+        <AddButton type="button" onClick={handleAdd}>
+          <FaPlus />
+        </AddButton>
+      </AddButtonWrap>
       <Table
         page="personnelInformation"
         headerArr={HEADER_ARR}
