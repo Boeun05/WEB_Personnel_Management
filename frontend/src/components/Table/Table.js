@@ -9,11 +9,19 @@ const StyledTable = styled.table`
   width: 100%;
   text-align: center;
   border-collapse: collapse;
-  border: 1px solid #a9a9a9;
-  th,
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+
+  th {
+    background: #ebf0f5;
+    color: #0c243c;
+    font-weight: normal;
+    padding: 0.8em;
+    font-size: 17px;
+  }
   td {
-    border: 1px solid #a9a9a9;
-    padding: 0.5em;
+    border-bottom: 1px solid #efefef;
+    padding: 0.8em;
   }
 `;
 

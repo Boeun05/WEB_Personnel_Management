@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+import { FaPen } from 'react-icons/fa';
 
 const Button = styled.button`
   cursor: pointer;
@@ -7,7 +8,7 @@ const Button = styled.button`
   font-size: 14px;
   ${({ theme }) => {
     return css`
-      color: ${theme.palette['blue']};
+      color: ${theme.palette['darkgrey']};
     `;
   }}
 `;
@@ -27,7 +28,9 @@ function EmployeeRow({ data, rest }) {
       <td>{data.empJoinDate}</td>
       <td>{data.empPhoneNum}</td>
       <td>
-        <Button onClick={handleEditButton}>수정</Button>
+        <Button onClick={handleEditButton}>
+          <FaPen />
+        </Button>
       </td>
     </tr>
   );

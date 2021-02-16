@@ -14,7 +14,7 @@ const StyledButton = styled.button`
   font-weight: 200;
 
   /* 색상 */
-  background: #2d93f0;
+  background: #0081cc;
 
   margin-top: 6px;
 `;

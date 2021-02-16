@@ -8,14 +8,14 @@ const WorkBlockElement = React.memo(function ({ data, modalOpen }) {
       id={data.workId}
       className={data.workStatus ? styles.blockElements : styles.blockCompleted}
     >
-      <p className={styles.title}>[{data.workName}]</p>
-      <p className={styles.p}>
-        <span>- 업무기간: {data.workStartDate} ~ </span>
+      <p className={styles.title}>{data.workName}</p>
+      <p className={styles.workDate}>
+        <span>{data.workStartDate} ~ </span>
         <span>{data.workEndDate}</span>
       </p>
-      <p className={styles.p}>- 담당부서: {data.deptName}</p>
-      <p className={styles.p}>- 담당자: {data.workChargeName}</p>
-      <p className={styles.p}>- 담당 직원:{data.employees}</p>
+      <p className={styles.p}>담당부서: {data.deptName}</p>
+      <p className={styles.p}>담당자: {data.workChargeName}</p>
+      <p className={styles.p}>담당직원: {data.employees}</p>
       {data.workStatus ? (
         <button onClick={modalOpen} className={styles.button}>
           <i>

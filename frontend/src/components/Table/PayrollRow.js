@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+import { FaPen } from 'react-icons/fa';
 
 const Button = styled.button`
   cursor: pointer;
@@ -7,11 +8,28 @@ const Button = styled.button`
   font-size: 14px;
   ${({ theme }) => {
     return css`
-      color: ${theme.palette['blue']};
+      color: ${theme.palette['darkgrey']};
     `;
   }}
 `;
 
+const StyledTr = styled.tr`
+  .salary {
+    ${({ theme }) => {
+      return css`
+        color: ${theme.palette['green']};
+      `;
+    }}
+  }
+
+  .incentive {
+    ${({ theme }) => {
+      return css`
+        color: ${theme.palette['blue']};
+      `;
+    }}
+  }
+`;
 function PayrollRow({ data, rest }) {
   const { editModal } = rest;
   const handleEditButton = () => {
@@ -19,16 +37,18 @@ function PayrollRow({ data, rest }) {
   };
 
   return (
-    <tr>
+    <StyledTr>
       <td>{data.empName}</td>
       <td>{data.deptName}</td>
       <td>{data.empPosition}</td>
-      <td>{data.salary}</td>
-      <td>{data.incentive}</td>
+      <td className="salary">{data.salary}</td>
+      <td className="incentive">{data.incentive}</td>
       <td>
-        <Button onClick={handleEditButton}>수정</Button>
+        <Button onClick={handleEditButton}>
+          <FaPen />
+        </Button>
       </td>
-    </tr>
+    </StyledTr>
   );
 }
 

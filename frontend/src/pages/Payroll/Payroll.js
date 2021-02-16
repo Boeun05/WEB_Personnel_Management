@@ -18,7 +18,7 @@ const StyledForm = styled.form`
   input {
     width: 600px;
     padding: 0 10px;
-    margin-bottom: 70px;
+    margin-bottom: 55px;
     height: 42px;
     outline: none;
     box-sizing: border-box;
@@ -30,7 +30,7 @@ const StyledForm = styled.form`
     border-radius: 5px;
     font-size: 14px;
     cursor: pointer;
-    background: #2d93f0;
+    background: #0081cc;
     color: #fff;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     margin-left: 8px;
@@ -139,7 +139,7 @@ function Payroll() {
           onChange={handleWordChange}
         />
         <button type="submit" onClick={handleSearch}>
-          검색
+          검색하기
         </button>
       </StyledForm>
       <Table

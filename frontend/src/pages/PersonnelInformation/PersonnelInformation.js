@@ -35,7 +35,7 @@ const StyledForm = styled.form`
     border-radius: 5px;
     font-size: 14px;
     cursor: pointer;
-    background: #2d93f0;
+    background: #0081cc;
     color: #fff;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     margin-left: 8px;
@@ -52,7 +52,7 @@ const AddButton = styled.button`
   border-radius: 50%;
   color: #fff;
   font-size: 19px;
-  background: #2d93f0;
+  background: #0081cc;
   height: 40px;
   width: 40px;
   float: right;

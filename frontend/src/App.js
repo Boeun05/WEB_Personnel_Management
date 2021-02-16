@@ -17,7 +17,13 @@ function App() {
   return (
     <ThemeProvider
       theme={{
-        palette: { blue: '#2d93f0', red: '#ff3b30', grey: '#a9a9a9' },
+        palette: {
+          blue: '#0081cc',
+          red: '#b53737',
+          grey: '#BEBEBE',
+          darkgrey: '#7e7e7e',
+          green: '#76ba1b',
+        },
       }}
     >
       <div>

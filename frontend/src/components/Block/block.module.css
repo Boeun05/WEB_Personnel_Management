@@ -1,10 +1,10 @@
 .blockElements {
   position: relative;
   width: 100%;
-  background: #f4f5f9;
+  background: #ebf0f5;
   margin-bottom: 20px;
   box-sizing: border-box;
-  border: 1px solid #efefef;
+
   padding: 30px 40px;
   border-radius: 1rem;
 }
@@ -14,20 +14,53 @@
   background: rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
   box-sizing: border-box;
-  border: 1px solid #efefef;
+
   padding: 30px 40px;
   border-radius: 1rem;
 }
 
 .title {
-  font-size: 16px;
+  font-size: 17px;
   margin-bottom: 4px;
+  color: #333;
 }
 
+.subtitle {
+  color: #555;
+  font-size: 13px;
+
+  margin-left: 5px;
+}
 .p {
-  margin-bottom: 4px;
+  margin-bottom: 3px;
+  font-size: 15px;
+  color: #444;
 }
 
+.empName {
+  display: inline-block;
+  width: 80px;
+}
+.score {
+  color: #76ba1b;
+  display: inline-block;
+  text-align: center;
+}
+
+.slash {
+  color: #7e7e7e;
+  margin: 0 5px;
+}
+.comment {
+  color: #0081cc;
+}
+
+.workDate {
+  color: #555;
+  font-size: 13px;
+
+  margin-bottom: 10px;
+}
 .text {
   line-height: 1.2em;
 }
@@ -37,6 +70,7 @@
   top: 30px;
   right: 30px;
   cursor: pointer;
+  color: #7e7e7e;
 }
 
 .span {

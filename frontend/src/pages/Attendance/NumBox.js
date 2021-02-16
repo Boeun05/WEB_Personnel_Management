@@ -10,7 +10,7 @@ import styled, { css } from 'styled-components';
 const colorStyles = css`
   ${({ theme, type }) => {
     const color = [ON, OFF].includes(type)
-      ? 'blue'
+      ? 'green'
       : [ABSENCE, LATE].includes(type)
       ? 'red'
       : 'grey';

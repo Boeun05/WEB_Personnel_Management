@@ -1,5 +1,5 @@
 .sidebar {
-  background: #32373b;
+  background: #282e33;
   position: fixed;
   height: 100%;
   width: 15%;
@@ -14,7 +14,7 @@
 .p {
   font-size: 20px;
   margin-bottom: 5px;
-  color: #c0c6c3;
+  color: #ddd;
 }
 
 .list {
@@ -24,7 +24,7 @@
 }
 
 a {
-  color: #c0c6c3;
+  color: #ddd;
 }
 
 .activeStyle {

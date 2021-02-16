@@ -1,17 +1,30 @@
 import React from 'react';
+import styled, { css } from 'styled-components';
+
+const StyledTr = styled.tr`
+  .transferDept {
+    color: #76ba1b;
+  }
+  .transferPos {
+    color: #0081cc;
+  }
+  .transferStatus {
+    color: #b53737;
+  }
+`;
 
 function PersonnelStatusRow({ data }) {
   return (
-    <tr>
+    <StyledTr>
       <td>{data.employeeName}</td>
       <td>{data.curDepartmentName}</td>
-      <td>{data.transferDepartmentName}</td>
+      <td className="transferDept">{data.transferDepartmentName}</td>
       <td>{data.curPosition}</td>
-      <td>{data.transferPosition}</td>
+      <td className="transferPos">{data.transferPosition}</td>
       <td>{data.approveDate}</td>
       <td>{data.appointDate}</td>
-      <td>{data.isEnd ? '발령완료' : '발령예정'}</td>
-    </tr>
+      <td className="transferStatus">{data.isEnd ? '발령완료' : '발령예정'}</td>
+    </StyledTr>
   );
 }
 
