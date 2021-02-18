@@ -1,52 +1,44 @@
-# 인사 관리 사이트
+# 인사 관리 시스템
 
-## 프로젝트 개요
+## Description
 
-## 설계
-
-### 데이터베이스 ERD
-
-![erd](https://user-images.githubusercontent.com/50051656/103268353-a2614c00-49f6-11eb-8b8a-1364bfbe9f59.PNG)
-
-### 도메인
-
-![domain](https://user-images.githubusercontent.com/50051656/103268357-a2f9e280-49f6-11eb-8d9a-00b61415844b.PNG)
+React framework를 이용해 back-end 팀과 협업하여 만든 인사 관리 프로젝트로써 팀원들과 커뮤니케이션 스킬을 기르고 React개발 역량을 키우는 것을 목표로 했습니다.
+팀 노션(https://www.notion.so/4eb6f78fd45a4df0b192108a8c970316)을 통해 api경로를 공유하고 진행하고 있는 부분을 체크하며 함께 프로젝트를 진행했습니다.
 
 ## Preview
 
-## 개발 기능
 
-- 인사 관리(사용자, 부서)
-    - 인적사항관리
-    - 인사발령
+## Contributors
+- Frontend
+  - 송보은
+    - 로그인
+    - 업무관리
+    - 성과관리
     - 인사현황
-    - 조직도관리
-- 근태 관리
-    - 근태이력관리
-    - 근무일정/시간
-    - 초과 근무
-- 급여 관리
-    - 급여이력조회
-    - 성과급 관리
-- 업무 관리
-    - 업무 조회(진행사항 등)
-    - 업무 배정
-- 성과 관리
-    - 업적 평가
-    - 역량 평가
     
-## 의존 라이브러리
+  - 김다윤
+- Backend
+  - 하주현
+  - 송예은
 
-- data-jpa
-- thymeleaf
-- spring-web
-- security
-- lombok
-- devtools
-- h2 database
+## Features
 
-## 개발 환경
 
-- Gradle Project
-- Spring Boot 2.4.1
-- Java jdk 11
+
+## Requirements
+
+### Language
+- Javascript
+  
+### Framework
+- React
+  
+### Library
+- Frontend
+  - rodal
+  - Axios
+  - @material-ui/lab
+  - react-icons
+
+
+
