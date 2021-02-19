@@ -119,6 +119,16 @@ const Work = function () {
     setPage({ ...page, currentPage: currentPage });
   };
 
+  const resetModalInput = () => {
+    setModalInput({
+      ...modalInput,
+      workName: '',
+      workCharger: '',
+      workStartDate: '',
+      workEndDate: '',
+    });
+  };
+
   const addModalOpen = () => {
     setAddModal(true);
   };
@@ -164,6 +174,7 @@ const Work = function () {
           setShowPage(true);
           fetchUsers();
           setAddModal(false);
+          resetModalInput();
         });
     } catch (e) {
       console.log('업무를 추가하는데 문제가 있습니다.');
@@ -183,6 +194,7 @@ const Work = function () {
         .then(() => {
           fetchUsers();
           setCorrectModal(false);
+          resetModalInput();
         });
     } catch (e) {
       console.log('업무를 수정하는데 문제가 있습니다.');

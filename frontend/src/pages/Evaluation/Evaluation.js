@@ -144,6 +144,14 @@ const Evaluation = function () {
     setSelectedEmp(e.target.value);
   };
 
+  const resetModalInput = () => {
+    setModalInput({
+      ...modalInput,
+      score: '',
+      comment: '',
+    });
+  };
+
   const correctEval = (e) => {
     e.preventDefault();
     try {
@@ -157,6 +165,7 @@ const Evaluation = function () {
           setShowPage(true);
           fetchDatas();
           setCorrectModal(false);
+          resetModalInput();
         });
     } catch (e) {
       console.log('업무를 수정하는데 문제가 있습니다.');

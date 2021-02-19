@@ -46,6 +46,16 @@ function PersonnelStatusModal({
     setSelectedEmpName(e.target.dataset.name);
   };
 
+  const resetModalSelect = () => {
+    setInput('');
+    setSearchResults([]);
+    setSelectedEmpId('');
+    setSelectedEmpName('');
+    setSelectedDept('');
+    setSelectedPos('');
+    setSelectedDate('');
+  };
+
   const addPersonnelStatus = (e) => {
     e.preventDefault();
     axios
@@ -60,6 +70,7 @@ function PersonnelStatusModal({
         showPage();
         fetchData();
         handleModalClose();
+        resetModalSelect();
       });
   };
   const handleDeptChange = (e) => {
