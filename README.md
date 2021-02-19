@@ -6,7 +6,33 @@ React framework를 이용해 back-end 팀과 협업하여 만든 인사 관리 �
 팀 노션(https://www.notion.so/4eb6f78fd45a4df0b192108a8c970316) 을 통해 api경로를 공유하고 진행하고 있는 부분을 체크하며 함께 프로젝트를 진행했습니다.
 
 ## Preview
+#### 로그인 & 로그아웃
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/71836751/108490225-d9acf480-72e5-11eb-9895-3782cb4288b9.gif">
+</p>
 
+#### 업무추가 & 업무수정 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/71836751/108550109-72b52d00-7331-11eb-8d5d-b5998c79d50a.gif">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/71836751/108550520-04bd3580-7332-11eb-9dc6-c317e4469f3b.gif">
+</p>
+
+#### 인사현황추가
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/71836751/108552761-148a4900-7335-11eb-8f5e-20fb0d5dcf67.gif">
+</p>
+
+#### 성과수정
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/71836751/108551142-dab84300-7332-11eb-9a49-e4eec80aed45.gif">
+</p>
+
+#### 페이지네이션
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/71836751/108553069-85316580-7335-11eb-9b4f-5830a7f4a43c.gif">
+</p>
 
 ## Contributors
 - Frontend
