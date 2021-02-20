@@ -22,8 +22,8 @@ const StyledSpan = styled.span`
 
 function Login({ history, addToken }) {
   const [inputs, setInput] = useState({
-    userId: '',
-    userPw: '',
+    userId: 'test10@okky.kr',
+    userPw: '1234',
   });
 
   const { userId, userPw } = inputs;
