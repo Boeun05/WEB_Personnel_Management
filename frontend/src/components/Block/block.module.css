@@ -21,7 +21,7 @@
 
 .title {
   font-size: 17px;
-  margin-bottom: 4px;
+  margin-bottom: 10px;
   color: #333;
 }
 
@@ -39,20 +39,12 @@
 
 .empName {
   display: inline-block;
-  width: 80px;
+  width: 100px;
 }
 .score {
-  color: #76ba1b;
   display: inline-block;
-  text-align: center;
-}
-
-.slash {
-  color: #7e7e7e;
-  margin: 0 5px;
-}
-.comment {
-  color: #0081cc;
+  text-align: left;
+  width: 100px;
 }
 
 .workDate {

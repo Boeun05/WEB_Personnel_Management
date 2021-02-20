@@ -20,7 +20,7 @@ const StyledSpan = styled.span`
   margin-bottom: 30px;
 `;
 
-function Login({ history }) {
+function Login({ history, addToken }) {
   const [inputs, setInput] = useState({
     userId: '',
     userPw: '',
@@ -44,8 +44,11 @@ function Login({ history }) {
     axios
       .post('/login', loginData)
       .then((response) => {
-        if (response.headers.authorization) {
-          localStorage.setItem('token', response.headers.authorization);
+        const token = response.headers.authorization;
+        if (token) {
+          localStorage.setItem('token', token);
+          addToken();
+          axios.defaults.headers.common['Authorization'] = `${token}`;
           history.push('./attendance');
         } else {
           alert(`로그인이 완료되지 않았습니다.`);

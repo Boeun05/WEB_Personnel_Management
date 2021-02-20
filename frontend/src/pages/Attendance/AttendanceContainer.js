@@ -2,7 +2,7 @@ import React, { useCallback, useState, useEffect } from 'react';
 import Attendance from './Attendance';
 import axios from 'axios';
 
-function AttendanceContainer() {
+function AttendanceContainer({ history }) {
   const [inputValues, setInputValues] = useState({
     date: '',
     word: '',
@@ -34,6 +34,9 @@ function AttendanceContainer() {
         });
       })
       .catch((error) => {
+        // if (error.response.status === 401) {
+        //   history.push('/');
+        // }
         console.log(error);
       });
   };

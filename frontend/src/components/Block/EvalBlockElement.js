@@ -13,9 +13,10 @@ const EvalBlockElement = React.memo(function ({ data, modalOpen }) {
         return (
           <p className={styles.p} key={index}>
             <span className={styles.empName}>{evalPerWork.empName}</span>
-            <span className={styles.score}>{evalPerWork.score}</span>
-            <span className={styles.slash}>/</span>
-            <span className={styles.comment}>{evalPerWork.comment}</span>
+            <span className={styles.score}>Score: {evalPerWork.score}</span>
+            <span className={styles.comment}>
+              Comment: {evalPerWork.comment}
+            </span>
           </p>
         );
       })}

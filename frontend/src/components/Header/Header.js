@@ -14,13 +14,13 @@ const convertLocation = {
   '/profile': '프로필',
 };
 
-function Header({ history }) {
+function Header({ removeToken }) {
   const location = useLocation();
   const pathname = location.pathname;
 
   const handleLogout = () => {
     localStorage.removeItem('token');
-    history.push('/');
+    removeToken();
   };
 
   return (
